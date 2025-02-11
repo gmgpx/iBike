@@ -11,6 +11,7 @@ import Constants from "expo-constants"
 
 const statusBarHeight = Constants.statusBarHeight;
 
+// tela principal
 export default function Index() {
   return (
     <ScrollView
