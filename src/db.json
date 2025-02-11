@@ -1,0 +1,92 @@
+{
+    "brands": [
+      { 
+        "id": "1", 
+        "name": "Yamaha", 
+        "image": "https://i.pinimg.com/736x/94/fd/a2/94fda24b684b85c71616407a20385c19.jpg"
+      },
+      { 
+        "id": "2", 
+        "name": "Honda", 
+        "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/20190461-honda-logotipo-honda-icone-livre-gratis-vetor.jpg"
+      },
+      { 
+        "id": "3", 
+        "name": "Kawasaki", 
+        "image": "https://i.pinimg.com/736x/d4/6d/1c/d46d1c2cd2d20577e92920c32a82f31d.jpg"
+      },
+      { 
+        "id": "4", 
+        "name": "Royal Enfield", 
+        "image": "https://play-lh.googleusercontent.com/LGQn7smsAsYLk6N_4gEmv8Nzty2oUb52SS5W23ryfFVbwXlwWFE9EpHENX_Wa-acWIse"
+      },
+      { 
+        "id": "5", 
+        "name": "Bajaj", 
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIJ2pxG2Unyc1vULQQSNrTPyIuwD2z9TEAQ&s"
+      },
+      { 
+        "id": "6", 
+        "name": "Shineray", 
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESqML5i4npDoSZFTyq5KzueV7RfeyeMdBqQ&s"
+      }
+    ],
+    "bikes": [
+      { 
+        "id": "1", 
+        "name": "CB Twister 250", 
+        "price": 9500,
+        "brand": "Honda",
+        "kilometer": 20,
+        "rating": 4.8,
+        "desc": "Muito confiavel e robusta apesar dos anos de uso",
+        "image": "https://img.olx.com.br/images/44/442559368349073.jpg",
+        "brandId": "2"
+  
+      },
+      { 
+        "id": "2", 
+        "name": "CB Twister 300f", 
+        "price": 23990,
+        "brand": "Honda",
+        "kilometer": 2,
+        "rating": 4.9,
+        "desc": "A melhor twister dos últimos anos",
+        "image": "https://www.motoo.com.br/fotos/2023/1/960_720/honda_cb-300f-twister_2023_1_16012023_52206_960_720.jpg",
+        "brandId": "2"
+      },
+      { 
+        "id": "3", 
+        "name": "Fazer 250", 
+        "price": 24000,
+        "brand": "Yamaha",
+        "kilometer": 30,
+        "rating": 4.5,
+        "desc": "Um dos motores mais robustos a anos",
+        "image": "https://noticiassobreautomovel.com.br/wp-content/uploads/2024/01/Yamaha-Fazer-250-2024.jpg",
+        "brandId": "1"
+      },
+      { 
+        "id": "4", 
+        "name": "FZ15", 
+        "price": 20990,
+        "brand": "Yamaha",
+        "kilometer": 4,
+        "rating": 4.4,
+        "desc": "A melhor 150cc custo/benefício",
+        "image": "https://img.olx.com.br/images/37/372482592634125.jpg",
+        "brandId": "1"
+      },
+      { 
+        "id": "5", 
+        "name": "CG Titan 150", 
+        "price": 9000,
+        "brand": "Honda",
+        "kilometer": 70,
+        "rating": 4.4,
+        "desc": "TANQUE DE GUERRA!",
+        "image": "https://img.olx.com.br/images/25/252494333459949.jpg",
+        "brandId": "2"
+      }
+    ]
+  }
