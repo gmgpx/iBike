@@ -27,7 +27,7 @@
       },
       { 
         "id": "6", 
-        "name": "Shineray", 
+        "name": "BMW", 
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESqML5i4npDoSZFTyq5KzueV7RfeyeMdBqQ&s"
       }
     ],
@@ -87,6 +87,17 @@
         "desc": "TANQUE DE GUERRA!",
         "image": "https://img.olx.com.br/images/25/252494333459949.jpg",
         "brandId": "2"
+      },
+      { 
+        "id": "6", 
+        "name": "Versys 300", 
+        "price": 18000,
+        "brand": "Kawasaki",
+        "kilometer": 170,
+        "rating": 3.5,
+        "desc": "Melhor bicilindro custo/beneficio",
+        "image": "https://img.olx.com.br/images/59/597239508302333.jpg",
+        "brandId": "3"
       }
     ]
   }
