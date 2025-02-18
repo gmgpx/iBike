@@ -1,4 +1,4 @@
-import { View, Pressable, Text, Image } from 'react-native';
+import { Pressable, Text, Image } from 'react-native';
 import { BrandProps } from '..';
 
 export default function CardBrand({ item }: { item: BrandProps }) {
@@ -10,6 +10,7 @@ export default function CardBrand({ item }: { item: BrandProps }) {
             <Image
                 source={{ uri: item.image }}
                 className='w-20 h-20 rounded-full'
+                resizeMode="cover"
             />
             <Text
                 className='text-sm mt-2 w-20 text-center leading-4 text-black'

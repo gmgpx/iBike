@@ -1,6 +1,7 @@
 import { FlatList } from 'react-native';
 import { useState, useEffect } from 'react';
 import { CardHorizontalBikes } from './bikes'
+import bikesData from '../../db.json';
 
 export interface BikeProps { 
     id: string, 
@@ -11,35 +12,22 @@ export interface BikeProps {
     rating: number,
     image: string,
     brandId: string;
-  }
-
-export function TrendingBikes() {
-    const [bikes, setBikes] = useState<BikeProps[]>([])
-
-    useEffect(() => {
-        async function getBikes(){
-            // Sempre checar seu endereço ipv4 
-            // com o comando 'ipconfig' no cmd
-            const response = await fetch('http://10.109.28.64:3000/bikes')
-            const data = await response.json()
-            setBikes(data);
-        }
-
-        getBikes();
-
-    }, [])
-
- return (
-
-   <FlatList 
-   data={bikes}
-   renderItem={ ({ item }) => <CardHorizontalBikes bike={ item } /> }
-   horizontal={true}
-   contentContainerStyle={{ gap: 14, paddingLeft: 16, paddingRight: 16  }}
-   showsHorizontalScrollIndicator={false}
-   />
-
-  );
 }
 
-// Faculdade\mobile\iBike\src\components\trending\index.tsx
+export function TrendingBikes() {
+    const [bikes, setBikes] = useState<BikeProps[]>([]);
+
+    useEffect(() => {
+        setBikes(bikesData.bikes);
+    }, []);
+
+    return (
+        <FlatList 
+            data={bikes}
+            renderItem={ ({ item }) => <CardHorizontalBikes bike={ item } /> }
+            horizontal={true}
+            contentContainerStyle={{ gap: 14, paddingLeft: 16, paddingRight: 16 }}
+            showsHorizontalScrollIndicator={false}
+        />
+    );
+}

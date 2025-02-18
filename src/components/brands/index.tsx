@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import CardBrand from './brands'
+import bikesData from '../../db.json';
 
 export interface BrandProps {
     id: string;
@@ -10,20 +11,11 @@ export interface BrandProps {
 
 export function Brands() {
 
-    const [brands, setBrands] = useState<BrandProps[]>([])
+  const [brands, setBikes] = useState<BrandProps[]>([]);
 
-    useEffect(() => {
-        async function getBikes(){
-            // Sempre checar seu endereço ipv4 
-            // com o comando 'ipconfig' no cmd
-            const response = await fetch('http://10.109.28.62:3000/brands')
-            const data = await response.json()
-            setBrands(data);
-        }
-
-        getBikes();
-
-    }, [])
+  useEffect(() => {
+      setBikes(bikesData.brands); 
+  }, []);
 
  return (
    <FlatList 
