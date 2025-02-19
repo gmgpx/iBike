@@ -7,9 +7,20 @@ export function CardHorizontalBikes({ bike }: { bike: BikeProps }) {
   const router = useRouter();
 
   const handlePress = () => {
-    console.log("Clicou no anuncio da " + bike.name);
-    router.push(`/BikeDetails?id=${bike.id}`);
+    router.push({
+      pathname: "/BikeDetails",
+      params: {
+        id: bike.id,
+        name: bike.name,
+        price: bike.price.toString(), // Converta números para string
+        brand: bike.brand,
+        kilometer: bike.kilometer.toString(),
+        rating: bike.rating.toString(),
+        image: bike.image,
+      },
+    });
   };
+  
 
   return (
     <Pressable
